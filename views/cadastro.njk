@@ -1,0 +1,102 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <form action="/enviarForm" method="POST">
+
+        <div class="card">
+
+            <section class="details">
+                <h3>Cadastro</h3>
+                <div class="item">
+                    <div class="titleItem">Nome</div>
+                    <input type="text" name="name" class="inputText" placeholder="Insira o nome do usuário que deseja cadastrar...">
+                </div>
+                <div class="item">
+                    <div class="titleItem">Qual sua faixa de idade:</div>
+                    <div class="radioButton">
+                        <input type="radio" name="idade" value="Até 30 anos">
+                        <p>Até 30 anos</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="idade" value="De 30 a 50 anos">
+                        <p>De 30 a 50 anos</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="idade" value="De 50 a 65 anos">
+                        <p>De 50 a 65 anos</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="idade" value="Acima de 65 anos">
+                        <p>Acima de 65 anos</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="titleItem">Qual seu convênio</div>
+                    <div class="radioButton">
+                        <input type="radio" name="convenio" value="INSS">
+                        <p>INSS</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="convenio" value="SIAPE">
+                        <p>SIAPE</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="convenio" value="Forças Armadas">
+                        <p>Forças Armadas</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="convenio" value="Outros">
+                        <p>Outros</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="titleItem">Qual sua faixa salarial:</div>
+                    <div class="radioButton">
+                        <input type="radio" name="salario" value="Até 2 SM">
+                        <p>Até 2 SM</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="salario" value="De 2 a 4 SM">
+                        <p>De 2 a 4 SM</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="salario" value="De 4 a 6 SM">
+                        <p>De 4 a 6 SM</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="salario" value="Acima de 6 SM">
+                        <p>Acima de 6 SM</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="titleItem">Por que você realizou o empréstimo:</div>
+                    <div class="radioButton">
+                        <input type="radio" name="emprestimo" value="Pagar Contas">
+                        <p>Pagar contas</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="emprestimo" value="Reforma da Casa">
+                        <p>Reforma da Casa</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="emprestimo" value="Compra de Carro">
+                        <p>Compra de Carro</p>
+                    </div>
+                    <div class="radioButton">
+                        <input type="radio" name="emprestimo" value="Outros">
+                        <p>Outros</p>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar Formulário</button>
+
+            </section>
+
+            
+
+        </div>
+
+    </form>
+
+{% endblock content %}
