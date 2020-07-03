@@ -18,6 +18,9 @@ Para iniciar o servidor, insira na linha de comando do console:
 npm start
 ```
 
+## Endereço do site
+
+Após iniciar o servidor, acesse: https://localhost:5000/
 
 ## Tecnologias utilizadas
 
