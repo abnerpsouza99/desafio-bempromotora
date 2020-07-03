@@ -4,6 +4,8 @@ Repositório destinado aos arquivos do Desafio proposto pela Bem Promotora, para
 
 ## Instalação
 
+__Importante:__ Instalar o [node.js](https://nodejs.org/en/).
+
 Para o pleno funcionamento da aplicação, instale as dependências, utilizando o comando abaixo:
 
 ```bash
@@ -16,6 +18,9 @@ Para iniciar o servidor, insira na linha de comando do console:
 npm start
 ```
 
+## Endereço do site
+
+Após iniciar o servidor, acesse: https://localhost:5000/
 
 ## Tecnologias utilizadas
 
