@@ -8,26 +8,26 @@ const db = require('./src/database/db')
 routes.use(bodyParser.urlencoded({extended: true}))
 
 routes.get('/', function(req, res){
-    return res.redirect("/cadastro")
+    return res.redirect("/pesquisas")
 })
 
-routes.get('/cadastro', function(req, res){
-    return res.render('cadastro')
+routes.get('/pesquisas', function(req, res){
+    return res.render('pesquisas')
 })
 
-routes.get('/cadastro-concluido', function(req, res){
-    return res.render('cadastro-concluido')
+routes.get('/pesquisa-concluida', function(req, res){
+    return res.render('pesquisa-concluida')
 })
 
-routes.get('/usuarios', function(req, res){
+routes.get('/pesquisas-registradas', function(req, res){
     
-
     const search = req.query.search
 
     if(search == "") {
         // Pesquisa vazia
         return res.render("search-results.html", {rows: 0})
     }
+
 
     const query = `
     SELECT * FROM users`
@@ -40,7 +40,7 @@ routes.get('/usuarios', function(req, res){
         rows.forEach(function(row){
         })
 
-        return res.render('usuarios', {rows: rows})
+        return res.render('pesquisas-registradas', {rows: rows})
     })
 })
 

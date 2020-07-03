@@ -39,7 +39,7 @@ server.post("/enviarForm", function (req, res){
 
     db.run(query, values)
 
-    return res.render('cadastro-concluido')
+    return res.render('pesquisa-concluida')
 })
 
 

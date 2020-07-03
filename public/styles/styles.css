@@ -140,7 +140,7 @@ header {
 
 .details .inputText {
     padding: 0.5em 1em;
-    width: 100%;
+    width: 50%;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
