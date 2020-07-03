@@ -4,7 +4,8 @@ Repositório destinado aos arquivos do Desafio proposto pela Bem Promotora, para
 
 ## Instalação
 
-__Importante:__ Instalar o node.js.
+__Importante:__ Instalar o [node.js](https://nodejs.org/en/).
+
 Para o pleno funcionamento da aplicação, instale as dependências, utilizando o comando abaixo:
 
 ```bash
