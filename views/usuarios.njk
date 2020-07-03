@@ -2,32 +2,37 @@
 
 {% block content %}
 
-<div class="card">
-    
-    <section class="details">
-                <h3>Usuários Cadastrados</h3>
+    <div class="card">
+
+        <section class="details">
+            <h3>Usuários Cadastrados</h3>
+
+            {% for row in rows %}
                 <div class="item">
                     <div class="titleItem">Nome:</div>
-                    <div class="resposta"></div>
+                    <div class="resposta">{{row.name}}</div>
                 </div>
                 <div class="item">
                     <div class="titleItem">Qual sua faixa de idade:</div>
-                    <div class="resposta"></div>
+                    <div class="resposta">{{row.idade}}</div>
                 </div>
                 <div class="item">
                     <div class="titleItem">Qual seu convênio</div>
-                    <div class="resposta"></div>
+                    <div class="resposta">{{row.convenio}}</div>
                 </div>
                 <div class="item">
                     <div class="titleItem">Qual sua faixa salarial:</div>
-                    <div class="resposta"></div>
+                    <div class="resposta">{{row.salario}}</div>
                 </div>
                 <div class="item">
                     <div class="titleItem">Por que você realizou o empréstimo:</div>
-                    <div class="resposta"></div>
+                    <div class="resposta">{{row.emprestimo}}</div>
                 </div>
-    </section>            
 
-</div>
+            {% endfor %}
+
+        </section>
+
+    </div>
 
 {% endblock content %}

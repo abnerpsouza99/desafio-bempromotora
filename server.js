@@ -9,7 +9,6 @@ const db = require('./src/database/db')
 server.use(routes)
 
 server.use(express.static('public/styles'))
-server.use(express.static('public/assets'))
 
 server.set("view engine", "njk")
 
@@ -23,11 +22,11 @@ server.post("/enviarForm", function (req, res){
 
     const query = `
     INSERT INTO users (
-        name TEXT,
-        idade VARCHAR(60),
-        convenio VARCHAR(60),
-        salario VARCHAR(60),
-        emprestimo VARCHAR(60)
+        name,
+        idade,
+        convenio,
+        salario,
+        emprestimo
     ) VALUES (?,?,?,?,?)`
     
     const values = [
@@ -39,6 +38,8 @@ server.post("/enviarForm", function (req, res){
     ]
 
     db.run(query, values)
+
+    return res.render('cadastro-concluido')
 })
 
 

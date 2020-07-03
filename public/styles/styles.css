@@ -155,7 +155,7 @@ header {
     align-items: center;
 }
 
-.details .radioButton p {
+.details .radioButton label {
     margin-left: 30px;
     font-weight: none;
 }
